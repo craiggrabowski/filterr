@@ -5,6 +5,7 @@ Version: 0.0.0.9000
 Author: person("Craig", "Grabowski", 
     email = "craig.a.grabowski@gmail.com",             
     role = c("aut", "cre"))
+Maintainer: Craig Grabowski <craig.a.grabowski@gmail.com>
 Description: A library for filtering data programmatically using
     objects which represent logical conditions on rows.
 License: GPL-2
