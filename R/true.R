@@ -12,3 +12,7 @@ setClass("TrueFilterObject", contains = "FilterObject")
 #'
 #' @export
 true <- function() TrueFilterObject()
+
+
+print.TrueFilterObject <- function(x, ...)
+  cat("TRUE", "/n", sep = "")
