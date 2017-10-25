@@ -10,4 +10,5 @@
 NULL
 
 #' @importFrom methods is
+#' @importFrom methods new
 NULL
