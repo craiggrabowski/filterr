@@ -11,7 +11,8 @@ test_that("Basic R object are not filter objects", {
     "",
     rep(3L, 4L),
     FALSE,
-    NULL
+    NULL,
+    list()
   )
 
   lapply(xx, f)
