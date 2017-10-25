@@ -15,4 +15,4 @@ true <- function() TrueFilterObject()
 
 
 print.TrueFilterObject <- function(x, ...)
-  cat("TRUE", "/n", sep = "")
+  cat("TRUE", "\n", sep = "")
