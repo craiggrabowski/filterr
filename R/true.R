@@ -14,5 +14,8 @@ setClass("TrueFilterObject", contains = "FilterObject")
 true <- function() TrueFilterObject()
 
 
+as.character.TrueFilterObject <- function(x, ...) "TRUE"
+
+
 print.TrueFilterObject <- function(x, ...)
-  cat("TRUE", "\n", sep = "")
+  cat(as.character(x, ...), "\n", sep = "")
