@@ -8,3 +8,6 @@
 #' @docType package
 #' @name filterr
 NULL
+
+#' @importFrom methods is
+NULL
