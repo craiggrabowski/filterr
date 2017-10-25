@@ -15,6 +15,7 @@ RoxygenNote: 6.0.1
 Collate: 
     'filterr.R'
     'object.R'
+    'false.R'
     'true.R'
 Suggests: testthat
 Imports: methods
