@@ -19,3 +19,8 @@ as.character.TrueFilterObject <- function(x, ...) "TRUE"
 
 print.TrueFilterObject <- function(x, ...)
   cat(as.character(x, ...), "\n", sep = "")
+
+
+as.function.TrueFilterObject <- function(x, ...) {
+  function(df) rep(TRUE, nrow(df))
+}
