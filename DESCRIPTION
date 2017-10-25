@@ -12,8 +12,9 @@ License: GPL-2
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.0.1
-Collate:
+Collate: 
     'filterr.R'
     'object.R'
+    'true.R'
 Suggests: testthat
 Imports: methods
