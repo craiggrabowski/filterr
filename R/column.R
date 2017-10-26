@@ -39,3 +39,9 @@ column <- function(x) NamedColumn(name = as.character(x))
 is_column <- function(x) is(x, "Column")
 
 
+as.column <- function(x, ...) UseMethod("as.column")
+
+as.column.default <- function(x, ...) column(x)
+as.column.Column <- function(x, ...) x
+
+

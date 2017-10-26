@@ -35,3 +35,21 @@ test_that("column prints as character", {
 
   lapply(xx, f)
 })
+
+test_that("as.column is column for non-columns", {
+  f <- function(x) expect_equal(as.column(x), column(x))
+
+  xx <- list(
+    "x"
+  )
+
+  lapply(xx, f)
+})
+
+test_that("as.column is identity for columns", {
+  f <- function(x) expect_equal(as.column(x), x)
+
+  xx <- lapply("x", column)
+
+  lapply(xx, f)
+})
