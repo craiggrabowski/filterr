@@ -14,6 +14,7 @@ LazyData: true
 RoxygenNote: 6.0.1
 Collate: 
     'filterr.R'
+    'column.R'
     'object.R'
     'false.R'
     'true.R'
