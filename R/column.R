@@ -16,6 +16,8 @@ setClass("NamedColumn",
 
 as.character.NamedColumn <- function(x, ...) x@name
 
+print.NamedColumn <- function(x, ...) cat(as.character(x, ...), "\n", sep = "")
+
 #' A function returning a column name
 #'
 #' \code{column} returns a named column.

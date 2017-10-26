@@ -25,3 +25,13 @@ test_that("column converts to character as field name", {
 
   lapply(xx, f)
 })
+
+test_that("column prints as character", {
+  f <- function(x) expect_output(print(column(x)), x)
+
+  xx <- list(
+    "x"
+  )
+
+  lapply(xx, f)
+})
