@@ -17,5 +17,6 @@ Collate:
     'object.R'
     'false.R'
     'true.R'
+    'not.R'
 Suggests: testthat
 Imports: methods
