@@ -12,3 +12,16 @@ test_that("column returns a column object", {
 
   lapply(xx, f)
 })
+
+test_that("column converts to character as field name", {
+  f <- function(x) expect_equal(
+    as.character(column(x)),
+    x
+  )
+
+  xx <- list(
+    "x"
+  )
+
+  lapply(xx, f)
+})

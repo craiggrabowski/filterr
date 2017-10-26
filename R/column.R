@@ -14,6 +14,7 @@ setClass("NamedColumn",
   contains = "Column"
 )
 
+as.character.NamedColumn <- function(x, ...) x@name
 
 #' A function returning a column name
 #'
