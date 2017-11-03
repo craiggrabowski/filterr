@@ -13,6 +13,7 @@ Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.0.1
 Collate: 
+    'RcppExports.R'
     'filterr.R'
     'column.R'
     'object.R'
@@ -20,4 +21,6 @@ Collate:
     'true.R'
     'not.R'
 Suggests: testthat
-Imports: methods
+Imports: methods,
+    Rcpp
+LinkingTo: Rcpp
