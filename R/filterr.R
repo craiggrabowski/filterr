@@ -12,3 +12,7 @@ NULL
 #' @importFrom methods is
 #' @importFrom methods new
 NULL
+
+#' @useDynLib filterr
+#' @importFrom Rcpp sourceCpp
+NULL
