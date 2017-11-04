@@ -17,9 +17,22 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+// orEq
+LogicalVector orEq(LogicalVector x, LogicalVector y);
+RcppExport SEXP _filterr_orEq(SEXP xSEXP, SEXP ySEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< LogicalVector >::type x(xSEXP);
+    Rcpp::traits::input_parameter< LogicalVector >::type y(ySEXP);
+    rcpp_result_gen = Rcpp::wrap(orEq(x, y));
+    return rcpp_result_gen;
+END_RCPP
+}
 
 static const R_CallMethodDef CallEntries[] = {
     {"_filterr_andEq", (DL_FUNC) &_filterr_andEq, 2},
+    {"_filterr_orEq", (DL_FUNC) &_filterr_orEq, 2},
     {NULL, NULL, 0}
 };
 

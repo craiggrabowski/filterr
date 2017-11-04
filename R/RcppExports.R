@@ -5,3 +5,7 @@ andEq <- function(x, y) {
     .Call('_filterr_andEq', PACKAGE = 'filterr', x, y)
 }
 
+orEq <- function(x, y) {
+    .Call('_filterr_orEq', PACKAGE = 'filterr', x, y)
+}
+
