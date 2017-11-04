@@ -1,5 +1,6 @@
 #include <Rcpp.h>
 #include <iterator>
+#include <algorithm>
 using namespace Rcpp;
 
 typedef LogicalVector::iter_traits::value_type LT;
@@ -17,13 +18,8 @@ LT scalar_and(LT x, LT y) {
 
 // [[Rcpp::export]]
 LogicalVector andEq(LogicalVector x, LogicalVector y) {
-
-  LogicalVector::iterator it = x.begin();
-  LogicalVector::iterator ity = y.begin();
-  for (; it != x.end(); ++it, ++ity) {
-    *it = scalar_and(*it, *ity);
-  }
-
+  std::transform(x.begin(), x.end(),
+    y.begin(), x.begin(), scalar_and);
   return x;
 }
 
