@@ -12,5 +12,14 @@ test_that("orEq acts as logical-or", {
 
   xx <- c(TRUE, FALSE, NA)
 
-  for (x in xx) for (y in xx) f(x, y)
+  for (x in xx) f(TRUE, x)
+  #f(TRUE, TRUE)
+  #f(TRUE, FALSE)
+  #f(TRUE, NA)
+  f(FALSE, TRUE)
+  f(FALSE, FALSE)
+  f(FALSE, NA)
+  f(NA, TRUE)
+  f(NA, FALSE)
+  f(NA, NA)
 })
